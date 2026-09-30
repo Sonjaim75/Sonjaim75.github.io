@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Into the Woods — Sonjaim</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Son<span>jaim</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="peliculas.html" class="active">Películas</a></li>
+        <li><a href="colecciones.html">Colecciones</a></li>
+        <li><a href="sobre.html">Sobre nosotros</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="search-btn" id="searchBtn" aria-label="Buscar">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="search-overlay" id="searchOverlay">
+    <form class="search-box" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Buscar películas, directores, géneros..." autocomplete="off">
+      <button type="submit">Buscar</button>
+      <button type="button" id="searchClose" style="background:#eee;color:#333;">✕</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="detail-header">
+      <div class="detail-poster">
+        <span>I</span>
+      </div>
+      <div class="detail-info">
+        <h1>Into the Woods</h1>
+        <p class="year">1991</p>
+        <div class="detail-meta">
+          <span class="tag">Drama</span>
+          <span class="tag">Fantasía</span>
+        </div>
+
+        <div class="detail-row">
+          <strong>Dirección</strong>
+          <p>James Lapine</p>
+        </div>
+
+        <div class="detail-description">
+          <p>En este musical ganador del premio Tony de Stephen Sondheim, varios personajes de cuentos de hadas aprenden por las malas que el 'Happy Ever After' que buscaban no es necesariamente tan feliz después de todo.</p>
+        </div>
+
+        <div class="external-link">
+          <a href="#" class="btn btn-primary" onclick="alert('Aquí irá el enlace externo cuando lo agregues'); return false;">
+            Ver película →
+          </a>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:8px;">El enlace externo se agregará más adelante.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screenshots">
+      <h2>Capturas</h2>
+      <div class="screenshot-grid">
+        <div class="screenshot-placeholder">Captura 1</div>
+        <div class="screenshot-placeholder">Captura 2</div>
+        <div class="screenshot-placeholder">Captura 3</div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="peliculas.html" class="btn btn-outline">← Volver al catálogo</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Sonjaim · Proyecto personal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

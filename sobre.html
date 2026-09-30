@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nosotros — Sonjaim</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Son<span>jaim</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="peliculas.html">Películas</a></li>
+        <li><a href="colecciones.html">Colecciones</a></li>
+        <li><a href="sobre.html" class="active">Sobre nosotros</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="search-btn" id="searchBtn" aria-label="Buscar">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="search-overlay" id="searchOverlay">
+    <form class="search-box" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Buscar películas, directores, géneros..." autocomplete="off">
+      <button type="submit">Buscar</button>
+      <button type="button" id="searchClose" style="background:#eee;color:#333;">✕</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h1 class="section-title">Sobre nosotros</h1>
+
+    <div class="about-content">
+      <h2>Bienvenido a Sonjaim</h2>
+      <p>
+        Sonjaim es un proyecto personal creado para organizar y compartir un catálogo de películas.
+        Aquí puedes explorar títulos, filtrar por género o año, y descubrir más detalles de cada obra.
+      </p>
+      <p>
+        Este sitio está en fase de prueba. El contenido actual es solo de demostración y será reemplazado
+        por el catálogo definitivo más adelante.
+      </p>
+      <p>
+        Si tienes sugerencias o quieres contribuir, ¡estaré encantado de escucharte!
+      </p>
+      <p style="margin-top:32px; font-size:0.95rem; color:var(--text-muted);">
+        Hecho con ❤️ y mucho café.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Sonjaim · Proyecto personal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

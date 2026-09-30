@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colecciones — Sonjaim</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Son<span>jaim</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="peliculas.html">Películas</a></li>
+        <li><a href="colecciones.html" class="active">Colecciones</a></li>
+        <li><a href="sobre.html">Sobre nosotros</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="search-btn" id="searchBtn" aria-label="Buscar">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="search-overlay" id="searchOverlay">
+    <form class="search-box" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Buscar películas, directores, géneros..." autocomplete="off">
+      <button type="submit">Buscar</button>
+      <button type="button" id="searchClose" style="background:#eee;color:#333;">✕</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h1 class="section-title">Colecciones</h1>
+    <p style="color:var(--text-muted); margin-bottom:32px;">Agrupaciones temáticas de películas. (Contenido de prueba)</p>
+
+    <div class="collection-grid">
+
+      <div class="collection-card">
+        <div class="collection-cover">Musicales de Sondheim</div>
+        <div class="collection-body">
+          <h3>Stephen Sondheim</h3>
+          <p>Una selección de adaptaciones y versiones de los musicales del gran compositor.</p>
+          <a href="peliculas.html" class="btn btn-outline" style="font-size:0.9rem; padding:8px 16px;">Ver películas</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="collection-cover">Clásicos de Broadway</div>
+        <div class="collection-body">
+          <h3>Broadway en pantalla</h3>
+          <p>Producciones que llevaron el teatro musical a la televisión y al cine.</p>
+          <a href="peliculas.html" class="btn btn-outline" style="font-size:0.9rem; padding:8px 16px;">Ver películas</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="collection-cover">Drama &amp; Thriller</div>
+        <div class="collection-body">
+          <h3>Historias intensas</h3>
+          <p>Relatos con tensión, drama y giros que te mantienen enganchado.</p>
+          <a href="peliculas.html" class="btn btn-outline" style="font-size:0.9rem; padding:8px 16px;">Ver películas</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Sonjaim · Proyecto personal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
